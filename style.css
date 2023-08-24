@@ -1,0 +1,127 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+
+    background-size: cover;
+}
+
+body {
+    background-image: url(img.jpg10.jpg);
+    background-size: 1100px;
+    background-repeat: no-repeat;
+    background-position: 100%;
+
+
+
+
+
+}
+
+.container nav {
+    width: 90%;
+    margin: auto;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container nav .logo {
+    font-size: 40px;
+    color: black;
+    font-weight: bold;
+}
+
+.container nav ul li {
+    display: inline-block;
+    margin-left: 35px;
+    position: relative;
+}
+
+.container nav ul li a {
+    color: black;
+    font-size: 18px;
+
+}
+
+.container nav ul li::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    background-color: black;
+    width: 0;
+    height: 2px;
+    transition: 0.3s;
+}
+
+.container nav ul li:hover:after,
+.container nav ul li:active:after {
+    width: 100%;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 6%;
+    transform: translateY(-50%);
+}
+
+.content h1 {
+    color: black;
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+
+}
+
+.content p {
+    color: black line-height: 1.7;
+    letter-spacing: 1.5px;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.content .btn {
+    padding: 15px 25px;
+    background-color: blue;
+    color: #fff;
+    /* border-radius: 30px; */
+    border: 1px solid blue;
+}
+
+.content .btn:hover {
+    background-color: transparent;
+    color: blue;
+}
+
+.boxes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 300px;
+
+    .box {
+        display: inline-block;
+        justify-content: center;
+        min-height: 400px;
+        padding-left: 40px;
+        margin-top: 150px;
+        padding-block: 10px;
+        border: hidden;
+        background-color: #fff;
+    }
+}
+
+.box .icon {
+    font-size: 35px;
+    margin-bottom: 10px;
+    color: black;
+}
